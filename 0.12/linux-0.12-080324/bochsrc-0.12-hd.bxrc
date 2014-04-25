@@ -12,13 +12,13 @@ megs: 32
 # ROMIMAGE:
 # The ROM BIOS controls what the PC does when it first powers on.
 #=======================================================================
-romimage: file=$BXSHARE/BIOS-bochs-latest 
+romimage: file=/usr/local/share/bochs/BIOS-bochs-latest 
 
 #=======================================================================
 # VGAROMIMAGE
 # You now need to load a VGA ROM BIOS into C0000.
 #=======================================================================
-vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest
+vgaromimage: file=/usr/local/share/bochs/VGABIOS-lgpl-latest
 
 #=======================================================================
 # CPU:
@@ -122,4 +122,4 @@ debug: action=ignore
 #=======================================================================
 # VGA_UPDATE_INTERVAL:
 #=======================================================================
-vga_update_interval: 300000
+#vga_update_interval: 300000
