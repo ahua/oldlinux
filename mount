@@ -1,0 +1,6 @@
+fdisk -l rootimage-0.12-hd
+losetup -d /dev/loop1
+losetup -o 512 /dev/loop1 rootimage-0.12-hd
+mount -t minix /dev/loop1 /mnt/hd
+unmount /mnt/hd
+
